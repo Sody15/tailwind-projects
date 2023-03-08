@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Webpack Tailwind Starter</title>
+  </head>
+  <body>
+    <!-- Container -->
+    <div
+      class="flex flex-col justify-center items-center bg-cyan-50 min-h-screen px-4"
+    >
+      <!-- Gallery -->
+      <div
+        class="gallery flex flex-col items-stretch gap-4 bg-white rounded-3xl p-6 m-4 shadow-2xl md:w-full md:items-end md:p-32"
+      >
+        <!-- Menu -->
+        <ul
+          class="menu flex flex-col md:flex-row md:gap-4 items-center gap-1 md:mb-12"
+        >
+          <li class="group pb-2 cursor-pointer">
+            <a href="#">Vector</a>
+            <div
+              class="group-hover:border-black mt-2 border-b-2 border-white w-[70%] m-auto hover:transition-all"
+            ></div>
+          </li>
+          <li class="group pb-2 cursor-pointer">
+            <a href="#">Illustrations</a>
+            <div
+              class="group-hover:border-black mt-2 border-b-2 border-white w-[70%] m-auto hover:transition-all"
+            ></div>
+          </li>
+          <li class="group pb-2 cursor-pointer">
+            <a href="#">Images</a>
+            <div
+              class="group-hover:border-black mt-2 border-b-2 border-white w-[70%] m-auto hover:transition-all"
+            ></div>
+          </li>
+          <li class="group pb-2 cursor-pointer">
+            <a href="#">Icons</a>
+            <div
+              class="group-hover:border-black mt-2 border-b-2 border-white w-[70%] m-auto hover:transition-all"
+            ></div>
+          </li>
+        </ul>
+        <!-- Search/Upload -->
+        <div
+          class="flex flex-col gap-4 md:flex-row md:items-end w-full justify-between"
+        >
+          <div class="flex mt-4 justify-between border-b">
+            <input
+              class="px-4 py-2 outline-none placeholder:font-thin md:w-80 md:py-4"
+              type="text"
+              placeholder="Search"
+            />
+            <img class="w-6" src="./images/magnifying-glass.svg" alt="" />
+          </div>
+          <button
+            class="text-white bg-black border border-black rounded-md p-3 mb-6 text-lg hover:bg-white hover:text-black hover:transition-colors min-w-[10rem] md:mb-0"
+          >
+            Upload
+          </button>
+        </div>
+
+        <!-- Images -->
+        <div
+          class="img-container flex flex-col gap-4 md:grid md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5"
+        >
+          <div class="relative group">
+            <img class="w-72" src="./images/image1.jpg" alt="" />
+            <div
+              class="flex w-full py-2 px-4 absolute bottom-0 text-white bg-black text-sm justify-between opacity-0 group-hover:opacity-60 group-hover:transition-opacity"
+            >
+              <div>
+                <div>Abstract Painting</div>
+                <div>245 likes - 35 Shares</div>
+              </div>
+              <img src="./images/bookmark.svg" alt="" />
+            </div>
+          </div>
+          <div class="relative group">
+            <img class="w-72" src="./images/image2.jpg" alt="" />
+            <div
+              class="flex w-full py-2 px-4 absolute bottom-0 text-white bg-black text-sm justify-between opacity-0 group-hover:opacity-60 group-hover:transition-opacity"
+            >
+              <div>
+                <div>Abstract Painting</div>
+                <div>245 likes - 35 Shares</div>
+              </div>
+              <img src="./images/bookmark.svg" alt="" />
+            </div>
+          </div>
+          <div class="relative group">
+            <img class="w-72" src="./images/image3.jpg" alt="" />
+            <div
+              class="flex w-full py-2 px-4 absolute bottom-0 text-white bg-black text-sm justify-between opacity-0 group-hover:opacity-60 group-hover:transition-opacity"
+            >
+              <div>
+                <div>Abstract Painting</div>
+                <div>245 likes - 35 Shares</div>
+              </div>
+              <img src="./images/bookmark.svg" alt="" />
+            </div>
+          </div>
+          <div class="relative group">
+            <img class="w-72" src="./images/image4.jpg" alt="" />
+            <div
+              class="flex w-full py-2 px-4 absolute bottom-0 text-white bg-black text-sm justify-between opacity-0 group-hover:opacity-60 group-hover:transition-opacity"
+            >
+              <div>
+                <div>Abstract Painting</div>
+                <div>245 likes - 35 Shares</div>
+              </div>
+              <img src="./images/bookmark.svg" alt="" />
+            </div>
+          </div>
+          <div class="relative group">
+            <img class="w-72" src="./images/image5.jpg" alt="" />
+            <div
+              class="flex w-full py-2 px-4 absolute bottom-0 text-white bg-black text-sm justify-between opacity-0 group-hover:opacity-60 group-hover:transition-opacity"
+            >
+              <div>
+                <div>Abstract Painting</div>
+                <div>245 likes - 35 Shares</div>
+              </div>
+              <img src="./images/bookmark.svg" alt="" />
+            </div>
+          </div>
+          <div class="relative group">
+            <img class="w-72" src="./images/image6.jpg" alt="" />
+            <div
+              class="flex w-full py-2 px-4 absolute bottom-0 text-white bg-black text-sm justify-between opacity-0 group-hover:opacity-60 group-hover:transition-opacity"
+            >
+              <div>
+                <div>Abstract Painting</div>
+                <div>245 likes - 35 Shares</div>
+              </div>
+              <img src="./images/bookmark.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../bundle.js"></script>
+  </body>
+</html>
+`

@@ -1,0 +1,95 @@
+body {
+  background-image: url("../dist/images/clipboard/bg-header-mobile.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  @apply md:bg-[url("../dist/images/clipboard/bg-header-desktop.png")];
+}
+
+h3 {
+  @apply text-4xl text-darkGrayishBlue font-bold md:text-5xl;
+}
+
+h4 {
+  @apply text-2xl text-darkGrayishBlue font-semibold;
+}
+
+p {
+  @apply text-grayishBlue text-xl py-4 text-center leading-10 max-w-3xl;
+}
+
+.btn-container {
+  @apply flex flex-col w-full gap-6 md:flex-row md:justify-center;
+  .btn-green,
+  .btn-blue {
+    @apply rounded-full text-white py-4 px-10 text-xl  shadow-lg transition-opacity hover:opacity-80;
+  }
+  .btn-green {
+    @apply bg-strongCyan;
+  }
+  .btn-blue {
+    @apply bg-lightBlue;
+  }
+}
+
+.icon {
+  @apply w-12 mb-8;
+}
+
+section {
+  @apply my-20 flex flex-col items-center justify-center text-center md:mb-40 m-auto max-w-6xl;
+}
+
+.items-list {
+  @apply flex flex-col gap-8 mt-12;
+  .item {
+    @apply flex flex-col items-center;
+  }
+}
+
+.snippets-section {
+  .inner-section {
+    @apply flex flex-col md:flex-row md:items-center md:mt-20 relative;
+    .img-container {
+      @apply mt-20 mb-16 md:m-0 md:w-1/2;
+      img {
+        @apply md:absolute md:right-[50%] md:top-0;
+      }
+    }
+    .items-list {
+      @apply md:w-1/2 md:pl-28 md:pr-0;
+      .item {
+        @apply md:items-start;
+        p {
+          @apply text-left leading-7;
+        }
+      }
+    }
+  }
+}
+
+.supercharge-section {
+  @apply mb-40;
+  .items-list {
+    @apply md:flex-row;
+  }
+}
+
+.logo-section {
+  @apply flex flex-col gap-16 md:flex-row mb-40 md:justify-between md:gap-0;
+}
+
+footer {
+  @apply bg-gray-50 -m-10 mt-6 py-10;
+  .inner-container {
+    @apply flex flex-col items-center md:flex-row md:justify-between max-w-6xl m-auto px-16;
+    nav {
+      @apply flex-grow md:ml-24;
+      ul {
+        @apply text-grayishBlue flex flex-col items-center gap-4 md:grid md:grid-cols-3;
+        li {
+          @apply hover:text-strongCyan cursor-pointer;
+        }
+      }
+    }
+  }
+}

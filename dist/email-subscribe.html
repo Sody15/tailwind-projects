@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email Subscribe</title>
+  </head>
+  <body>
+    <div class="bg-zinc-700 h-screen flex flex-col justify-center items-center">
+      <!-- Card -->
+      <div
+        class="flex flex-col md:flex-row md:max-w-2xl bg-zinc-800 rounded-2xl p-2 mx-6"
+      >
+        <img
+          class="h-80 md:h-64 rounded-xl md:rounded-r-none duration-200 ease-in hover:scale-105 transform"
+          src="./images/image.jpg"
+          alt=""
+        />
+        <div class="text-center p-6 md:p-12 md:text-left">
+          <h1 class="text-white text-xl font-serif">
+            Get diet and fitness tips in your inbox
+          </h1>
+          <p
+            class="text-white my-4 pr-12 text-xs max-w-xs leading-5 tracking-wide"
+          >
+            Eat better and exercise better. Sign up for the Diet & Fitness
+            newsletter.
+          </p>
+          <div class="flex flex-col md:flex-row md:space-x-3 md:space-y-0 mt-5">
+            <input
+              class="p-2 px-4 bg-zinc-800 border border-zinc-600 placeholder:text-center md:placeholder:text-left placeholder:text-xs w-full focus:outline-none text-white mb-4 md:mb-0 text-center md:text-left"
+              type="text"
+              placeholder="Enter your email address"
+            />
+            <button
+              class="bg-lime-500 rounded-md px-5 py-3 text-xs text-zinc-800 tracking-tight hover:text-white hover:bg-lime-700 transition duration-500 ease-in-out"
+            >
+              Subscribe
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../bundle.js"></script>
+  </body>
+</html>
