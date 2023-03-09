@@ -1,0 +1,147 @@
+#loopstudios {
+  h3 {
+    @apply text-slate-800 text-4xl uppercase mt-10 mb-6 md:text-5xl;
+  }
+
+  p {
+    @apply text-slate-800 text-base tracking-tight;
+  }
+
+  section:not(:first-child) {
+    @apply px-6 flex flex-col text-center md:p-0 max-w-6xl mx-auto;
+  }
+
+  .hero-section {
+    background-image: url(../dist/images/loopstudios/mobile/image-hero.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @apply sm:bg-[url('../dist/images/loopstudios/desktop/image-hero.jpg')] md:bg-top;
+    .hero-container {
+      @apply px-6 py-12 max-w-6xl m-auto;
+      header {
+        @apply flex justify-between items-center;
+        .menu-btn {
+          @apply -translate-y-1 md:hidden z-50;
+          img {
+            content: url(../dist/images/loopstudios/icon-hamburger.svg);
+          }
+          &.open img {
+            content: url(../dist/images/loopstudios/icon-close.svg);
+            @apply rotate-90 transition-all;
+          }
+        }
+        #menu {
+          font-family: "Alata";
+          @apply hidden text-white md:block md:text-base text-lg font-extralight md:font-bold absolute bg-black top-0 left-0 w-full h-full py-44 px-12 md:w-auto md:h-auto md:p-0 md:relative md:bg-transparent;
+          ul {
+            @apply flex gap-3 uppercase md:gap-8 flex-col md:flex-row;
+          }
+        }
+      }
+      h1 {
+        @apply max-w-lg text-white text-4xl uppercase border-2 border-white my-32 p-4 md:p-10 md:text-6xl md:mr-32 md:mx-0;
+      }
+    }
+  }
+
+  .leader-section {
+    @apply mt-32 flex flex-col md:!flex-row relative;
+    img {
+      @apply md:max-w-full;
+    }
+    .leader-text {
+      @apply md:absolute md:bg-white md:bottom-0 md:right-20 md:pl-20 md:py-6 max-w-lg md:text-left;
+    }
+  }
+
+  .creations-section {
+    @apply mt-24;
+    .top-row-container {
+      @apply flex justify-between items-center m-0;
+      h3 {
+        @apply m-0;
+      }
+    }
+    .image-list {
+      @apply flex flex-col gap-6 mt-20 mb-10 md:mb-32 md:grid md:grid-cols-4 md:gap-8;
+      .img-container {
+        @apply flex flex-col gap-4;
+
+        &:nth-of-type {
+          &(1) img {
+            content: url(../dist/images/loopstudios/mobile/image-deep-earth.jpg);
+            @apply md:content-[url('../dist/images/loopstudios/desktop/image-deep-earth.jpg')];
+          }
+          &(2) img {
+            content: url(../dist/images/loopstudios/mobile/image-night-arcade.jpg);
+            @apply md:content-[url('../dist/images/loopstudios/desktop/image-night-arcade.jpg')];
+          }
+          &(3) img {
+            content: url(../dist/images/loopstudios/mobile/image-soccer-team.jpg);
+            @apply md:content-[url('../dist/images/loopstudios/desktop/image-soccer-team.jpg')];
+          }
+          &(4) img {
+            content: url(../dist/images/loopstudios/mobile/image-grid.jpg);
+            @apply md:content-[url('../dist/images/loopstudios/desktop/image-grid.jpg')];
+          }
+          &(5) img {
+            content: url(../dist/images/loopstudios/mobile/image-from-above.jpg);
+            @apply md:content-[url('../dist/images/loopstudios/desktop/image-from-above.jpg')];
+          }
+          &(6) img {
+            content: url(../dist/images/loopstudios/mobile/image-pocket-borealis.jpg);
+            @apply md:content-[url('../dist/images/loopstudios/desktop/image-pocket-borealis.jpg')];
+          }
+          &(7) img {
+            content: url(../dist/images/loopstudios/mobile/image-curiosity.jpg);
+            @apply md:content-[url('../dist/images/loopstudios/desktop/image-curiosity.jpg')];
+          }
+          &(8) img {
+            content: url(../dist/images/loopstudios/mobile/image-fisheye.jpg);
+            @apply md:content-[url('../dist/images/loopstudios/desktop/image-fisheye.jpg')];
+          }
+        }
+        .img-card {
+          @apply relative overflow-hidden;
+          &__text {
+            @apply absolute text-white bottom-4 left-8 text-2xl uppercase text-left md:bottom-8;
+          }
+        }
+      }
+    }
+
+    button {
+      font-family: "Alata";
+      @apply uppercase border-2 border-black px-12 py-2 text-base font-extrabold tracking-widest  hover:bg-black hover:text-white hover:transition-all md:hidden;
+      &.top-btn {
+        @apply hidden md:block;
+      }
+      &.bottom-btn {
+        @apply block md:hidden;
+      }
+    }
+  }
+
+  footer {
+    @apply bg-black mt-32 md:mt-8;
+    .footer-container {
+      @apply text-white flex flex-col md:grid md:grid-cols-2 md:grid-rows-2 md:gap-y-4 md:grid-flow-col items-center gap-8 pt-10 pb-16 px-4 max-w-6xl  m-auto;
+      .logo {
+        @apply w-44;
+      }
+      .footer-menu {
+        @apply flex flex-col items-center gap-8 md:flex-row md:gap-6 font-bold;
+        .underline {
+          @apply bg-black w-3/4 h-[1px] m-auto group-hover:bg-white;
+        }
+      }
+      .icon-container {
+        @apply flex gap-4 md:justify-self-end;
+      }
+      span {
+        @apply text-base text-gray-500 md:justify-self-end;
+      }
+    }
+  }
+}

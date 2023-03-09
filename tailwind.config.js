@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Mulish", "Bai Jamjuree", "sans-serif"],
+        sans: ["Josefin Sans", "Alata", "Mulish", "Bai Jamjuree", "sans-serif"],
         mono: ["Rokkitt", "monospace"],
       },
       colors: {
@@ -16,4 +16,7 @@ module.exports = {
     },
   },
   plugins: [],
+  variants: {
+    backgroundColor: ["hover"],
+  },
 };
